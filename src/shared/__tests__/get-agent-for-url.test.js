@@ -41,7 +41,7 @@ describe("#getAgentForURL", () => {
 
         // Assert
         expect(httpSpy).toHaveBeenCalledWith({
-            keepAlive: true,
+            keepAlive: false,
         });
     });
 
@@ -71,7 +71,7 @@ describe("#getAgentForURL", () => {
 
         // Assert
         expect(httpSpy).toHaveBeenCalledWith({
-            keepAlive: true,
+            keepAlive: false,
         });
     });
 

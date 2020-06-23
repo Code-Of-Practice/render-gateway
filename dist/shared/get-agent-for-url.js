@@ -38,7 +38,7 @@ exports.getAgentForURL = void 0;
  */
 const getAgentForURL = url => {
   const agentOptions = {
-    keepAlive: true
+    keepAlive: false
   };
 
   switch (url.protocol) {

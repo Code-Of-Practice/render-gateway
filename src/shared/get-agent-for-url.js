@@ -35,7 +35,7 @@ import type {Agent as HttpsAgent} from "https";
  * retaining large chunks of memory and creating memory leaks.
  */
 export const getAgentForURL = (url: URL): HttpAgent | HttpsAgent => {
-    const agentOptions = {keepAlive: true};
+    const agentOptions = {keepAlive: false};
     switch (url.protocol) {
         case "http:":
             const http = require("http");
